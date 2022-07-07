@@ -1,0 +1,340 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section {
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+section h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--section-subtitle-txt-color)
+}
+
+h2 sup {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+sup {
+    font-size: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* UTILITIES */
+
+:root {
+    --topnav-bg-color: #000000;
+    --bottomnav-bg-color: #fff;
+    --accedi-bg-color: #1b1e20;
+    --buy-now-bg-color: #c23b0e;
+    --section-subtitle-txt-color: #575757;
+    --more-info-button-txt-color: #fff;
+    --more-info-button-bg-color: #235bdf;
+    --play-plus-bg-color: #c0c0c0;
+    --play-now-bg-color: #131938;
+    --play-now-button-bg-color: #fff;
+    --footer-bg-color: #023980;
+}
+
+.text-white {
+
+    color: white;
+}
+
+.text-blue {
+    color: #265fe6
+}
+
+.dark-section {
+    background-color: #252525;
+}
+
+/* BUTTONS */
+
+.buy-now-button {
+
+    background-color: var(--buy-now-bg-color);
+    border: 2px solid transparent;
+
+    font-weight: 600;
+    transition: all 0.3s ease
+}
+
+.more-info-button {
+    background-color: var(--more-info-button-bg-color);
+    color: var(--more-info-button-txt-color);
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: all 0.3s ease
+}
+
+/*  BUTTON HOVER EFFECTS */
+
+.nav-item #accedi-button {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+/* NAV BUTTON HOVER*/
+
+.nav-item #accedi-button:hover {
+    background-color: var(--accedi-bg-color);
+    box-shadow: 0px 0px 0px 2px var(--accedi-bg-color);
+    border: 2px solid white;
+    color: #265fe6;
+}
+
+/* BANNERS BUTTON HOVER */
+
+.buy-now-button:hover {
+    background-color: var(--buy-now-bg-color);
+    box-shadow: 0px 0px 0px 2px var(--buy-now-bg-color);
+    border: 2px solid black;
+}
+
+.more-info-button:hover {
+    background-color: var(--more-info-button-bg-color);
+    box-shadow: 0px 0px 0px 2px var(--more-info-button-bg-color);
+    border: 2px solid black;
+}
+
+/* PLAYSTATION NOW BUTTON HOVER */
+
+#playstation-now #play-now-button:hover {
+    color: black;
+}
+
+
+
+.page-banner {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* TOP NAVBAR */
+
+#topnav {
+    background-color: var(--topnav-bg-color);
+    text-align: end;
+}
+
+#bottomnav {
+    background-color: var(--bottomnav-bg-color)
+}
+
+#topnav #sonylogo {
+    height: 15px;
+}
+
+/* BOT NAVBAR */
+
+#navbar-left a {
+    /* color: black; */
+}
+
+/* BONUS NAVBAR JS */
+
+#bottomnav .dropdown-menu {
+
+    text-align: center;
+}
+
+#bottomnav .dropdown-item img {
+    display: block;
+}
+
+
+
+
+#serach-img {
+    height: 25px;
+}
+
+/* JUMBOTRON */
+
+#jumbotron {
+    background-image: url(../img/jumbo-bg.png);
+
+    padding-top: 250px;
+}
+
+#jumbotron #returnal-logo {
+    width: 60%;
+}
+
+/* BESTSELLERS */
+
+#best-seller-games img {
+    border-radius: 1rem;
+}
+
+#best-seller-games .game-thumb.my-active-thumb {
+    border-radius: 1.2rem;
+    border: 3px solid #265fe6;
+    padding: 0.2rem;
+}
+
+#best-seller-games .game-thumb {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+/*  BESTSELLER HOVER EFFECTS */
+
+#best-seller-games .game-thumb:hover {
+    transform: translateY(-10px);
+}
+
+/* HARDWARE */
+
+#hardware-section .hardware-item {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.09s ease;
+}
+
+#hardware-section .hardware-item.my-active-item {
+
+    opacity: 1;
+    border-bottom: 2px solid #265fe6;
+}
+
+/* HARDWARE HOVER EFFECTS */
+
+#hardware-section .hardware-item:hover {
+    opacity: 1;
+    border-bottom: 2px solid #265fe6;
+}
+
+
+/* RESPONSIVE HARDWARE */
+
+@media screen and (min-width: 768px) {
+
+
+    #hardware-section .hardware-item {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 50%;
+
+    }
+
+    #hardware-section .hardware-item figure {
+        height: 40%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #hardware-section .hardware-item figure {
+        height: 60%
+    }
+
+}
+
+
+/* IT TAKES 2 */
+
+#It-takes-two-banner {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+#It-takes-two-banner #ITT-logo {
+    width: 60%;
+}
+
+/* NEW RELEASES */
+
+#new-release {
+    background-color: #252525;
+    color: white;
+}
+
+#new-release img {
+    border-radius: 1rem;
+}
+
+#new-release .new-release-item {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* NEW RELEASES HOVER  */
+
+#new-release .new-release-item:hover {
+    transform: translateY(-10px);
+}
+
+/* PLAYSTATION PLUS */
+
+#playstation-plus {
+    background-color: var(--play-plus-bg-color);
+}
+
+.online-banner figure {
+    width: 70%;
+}
+
+#playstation-plus #play-plus-button {
+    background-color: #e0e0e0
+}
+
+/* PLAYSTATION NOW */
+
+#playstation-now {
+    background-color: var(--play-now-bg-color);
+}
+
+#playstation-now #play-now-button {
+    background-color: var(--play-now-button-bg-color);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--footer-bg-color);
+    padding-top: 5rem;
+
+}
+
+footer #footer-playstation-logo {
+    height: 100px;
+}
+
+footer #lang-globe {
+    height: 1.2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer #sie-logo {
+    height: 50px;
+}
